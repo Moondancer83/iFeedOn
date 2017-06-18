@@ -1,0 +1,18 @@
+main {
+    margin-top: 70px;
+}
+
+.panel-body .item p{
+    height: 40px;
+    overflow: hidden;
+}
+.panel-body .item img {
+    display: none;
+}
+.panel-body h3 {
+    margin: 0;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
