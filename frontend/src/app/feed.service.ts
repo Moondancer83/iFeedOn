@@ -7,15 +7,16 @@ export class FeedService {
 
   constructor() { }
 
-  getFeed(): [Feed] {
-    return this.getMock();
+  getFeed(chanel: string): [Feed] {
+    return this.getMock(chanel);
   }
 
-  private getMock(): [Feed] {
+  private getMock(url: string): [Feed] {
+    // logger.info('Feed from: ' + url);
     return FEEDS;
   }
 
-  private getFromServer(url) {
+  private getFromServer(url: string) {
     const upData = {url: url};
 
     // Some real server calls

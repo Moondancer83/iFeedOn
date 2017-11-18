@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { FeedService } from '../feed.service';
 import {Feed} from '../feed';
 
@@ -9,12 +9,13 @@ import {Feed} from '../feed';
 })
 export class ChanelComponent implements OnInit {
 
-  items: [Feed] = this.feedService.getFeed();
+  items: [Feed];
 
   constructor(private feedService: FeedService) { }
 
   ngOnInit() {
+    this.items = this.feedService.getFeed(this.chanel);
   }
 
-
+  @Input() chanel: string;
 }
