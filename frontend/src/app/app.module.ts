@@ -6,13 +6,15 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { ChanelsComponent } from './chanels/chanels.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ChanelComponent } from './chanel/chanel.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ChanelsComponent,
-    NavbarComponent
+    NavbarComponent,
+    ChanelComponent
   ],
   imports: [
     BrowserModule,
