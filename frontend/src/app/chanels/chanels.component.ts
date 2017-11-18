@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChanelsComponent implements OnInit {
 
+  chanelURLs = [
+    'http://origo.hu/contentpartner/rss/itthon/origo.xml',
+    'http://feeds.feedburner.com/lfghu/'
+  ];
+
   constructor() { }
 
   ngOnInit() {

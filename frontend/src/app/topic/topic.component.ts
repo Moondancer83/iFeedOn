@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Feed} from '../feed';
 
 @Component({
   selector: 'app-topic',
@@ -12,6 +13,6 @@ export class TopicComponent implements OnInit {
   ngOnInit() {
   }
 
-  @Input() data;
+  @Input() data: Feed;
 
 }
