@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ChanelsComponent } from './chanels/chanels.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ChanelComponent } from './chanel/chanel.component';
+import { TopicComponent } from './topic/topic.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ChanelComponent } from './chanel/chanel.component';
     AppComponent,
     ChanelsComponent,
     NavbarComponent,
-    ChanelComponent
+    ChanelComponent,
+    TopicComponent
   ],
   imports: [
     BrowserModule,
